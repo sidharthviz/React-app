@@ -8,9 +8,9 @@ import './App.css';
 
   return (
    <div className='App'>
-    <button onClick={() => setCounter((prevCounter) => prevCounter - 1)}>-</button>
+    <button onClick={() => setCounter((prevCounter) => prevCounter + 1)}>+</button>
     <h1>{counter}</h1>
-    <button onClick={() => setCounter((setCounter) => setCounter + 1)}>+</button>
+    <button onClick={() => setCounter((setCounter) => setCounter - 1)}>-</button>
 
    </div>
   )
