@@ -1,4 +1,6 @@
-import {useEffect} from "react";
+import { useEffect } from "react";
+
+import './App.css';
 
 //e52f2d97
 const API_URL = 'http://www.omdbapi.com?apikey=e52f2d97';
@@ -18,9 +20,17 @@ const App = () => {
     }, []);
 
     return (
-        <h1>
-         App
-        </h1>
+        <div className="app">
+        <h1>Vetflix</h1>
+        <div className="search">
+            <input placeholder="Search for Movies" 
+            value='Zindagi Na Milegi Dobara'
+            onChange={() => {}}
+            />
+
+        </div>
+        </div>
     )
 }
 export default App;
+
